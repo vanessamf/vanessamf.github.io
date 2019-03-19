@@ -116,10 +116,10 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://github.com/vanessamf/Album/tree/master/min_photos/' + data.link[i];
-          var src = 'https://github.com/vanessamf/Album/tree/master/photos/' + data.link[i];
+          var minSrc = '../../../Album/tree/master/min_photos/' + data.link[i];
+          var src = '../../../Album/tree/master/photos/' + data.link[i];
           var type = data.type[i];
-          var target = src + (type === 'video' ? '.mp4' : '');
+          var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
