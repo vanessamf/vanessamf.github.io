@@ -1867,7 +1867,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a277b6;
+  background: #50289a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3222,14 +3222,14 @@ pre .javascript .function {
 }
 .btn {
   color: #fff !important;
-  background: #555;
-  border: 2px solid #555 !important;
+  background: #c7a780;
+  border: 2px solid #c7a780 !important;
 }
 .btn:hover {
-  color: #555 !important;
+  color: #c7a780 !important;
   text-decoration: none !important;
   background: #fff !important;
-  border: 2px solid #555 !important;
+  border: 2px solid #c7a780 !important;
 }
 .highlight figcaption {
   margin: 0em;
@@ -3238,15 +3238,19 @@ pre .javascript .function {
   line-height: 1.5em;
 /*background: #eee;*/
 /*background:#E29bb6;*/
-  background: #a6c9ed;
+/*background:#a6c9ed;*/
+  background: #b79873;
   color: #fff;
 /*border-bottom: 1px solid #e9e9e9;*/
-  border-bottom: 1px solid #a6c9ed;
+/*border-bottom: 1px solid #a6c9ed;*/
+  border: 1px solid #b79873;
 }
 .highlight .gutter pre {
 /*background:rgba(226,155,182,.6);*/
-  background: rgba(166,201,237,0.6);
+/*background:rgba(166,201,237,.6);*/
+  background: #c7a780;
   color: #fff;
+/*border-right: 1px solid #906c42;*/
 }
 .highlight figcaption a {
   color: #5073b8;
@@ -3264,9 +3268,45 @@ span.inline-toc {
   margin: 2px 5px 2px 0px;
   line-height: 1.5;
 }
+.posts-collapse {
+  margin: 50px 0px;
+}
+@media (max-width: 1023px) {
+  .posts-collapse {
+    margin: 50px 20px;
+  }
+}
+.page-archive .posts-collapse .archive-move-on {
+  top: 10px;
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.posts-collapse::after {
+  margin-left: -2px;
+/*background-image: linear-gradient(180deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);*/
+  background: linear-gradient(180deg, #e29bb6 0, #e8ab6c 15%, #f5d883 30%, #a1decb 44%, #a6c9ed 58%, #6b8dd0 72%, #9b8dd4 86%, #c586d0 100%);
+}
+.posts-collapse .post-header:hover::before {
+  background-color: #a166ab;
+}
+.posts-collapse .post-title a {
+  color: #5073b8;
+}
+.posts-collapse .post-title a:hover {
+  color: #a166ab;
+}
+.posts-collapse .post-header:hover {
+  border-bottom-color: #a166ab;
+}
 .main {
   padding-bottom: 40px;
 }
 .footer {
+  position: relative;
   background: rgba(249,220,133,0.6);
+}
+.footer-inner {
+  margin: 0 auto;
+  padding: 20px 0;
 }
