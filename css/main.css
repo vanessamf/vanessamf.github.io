@@ -1867,7 +1867,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2b7dff;
+  background: #ff4eff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3231,19 +3231,40 @@ pre .javascript .function {
   background: #fff !important;
   border: 2px solid #c7a780 !important;
 }
+figure {
+/*border: 1px solid #c7a780;*/
+  border-left: none;
+}
 .highlight figcaption {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0em;
   padding: 0.5em;
-  height: 1.5em;
+/*height: 1.5em;*/
   line-height: 1.5em;
 /*background: #eee;*/
 /*background:#E29bb6;*/
 /*background:#a6c9ed;*/
-  background: #b79873;
-  color: #fff;
+  background: #e6d2b8;
+  color: #000;
 /*border-bottom: 1px solid #e9e9e9;*/
 /*border-bottom: 1px solid #a6c9ed;*/
-  border: 1px solid #b79873;
+/*border: 1px solid rgb(183, 152, 115);*/
+  border-left: 0px solid #c7a780;
+  border-bottom: 3px solid #fff;
+}
+.highlight figcaption::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 2.5em;
+  background: #c7a780;
+}
+.highlight table {
+  margin-top: 2.5em;
 }
 .highlight .gutter pre {
 /*background:rgba(226,155,182,.6);*/
